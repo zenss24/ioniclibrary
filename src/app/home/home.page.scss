@@ -1,0 +1,227 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.header {
+  background: #E8B31F; /* Adjust color as needed */
+  color: #ffffff;
+  padding: 20px;
+  padding-bottom: 80px; /* Adjust padding-bottom to ensure overlap */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+  background: #ffffff;
+  border-top-left-radius: 40px; /* Curved top corners of the content area */
+  border-top-right-radius: 40px; /* Curved top corners of the content area */
+  margin-top: -65px; /* Overlap the header slightly */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.icon-card {
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 16px rgba(11, 11, 11, 0.1);
+  padding: 5px;
+  width: 50px; /* Sesuaikan lebar kartu */
+  height: 50px; /* Sesuaikan tinggi kartu */
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto; /* Menyusun secara horizontal ke tengah */
+}
+
+.icon-card .card-logo {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.icon-card .card-logo img {
+  width: auto;
+  height: auto;
+
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.icon-card ion-card-header {
+  margin: 10px 0;
+}
+
+.icon-card ion-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.icon-card ion-card-subtitle {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #cecece;
+}
+
+.icon-card .balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.icon-card .balance span {
+  font-size: 14px;
+}
+
+.icon-card .balance h2 {
+  margin: 5px 0 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.transaction-list {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.transaction-list ion-item {
+  --padding-start: 5px;
+  --inner-padding-end: 5px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.transaction-list ion-icon {
+  font-size: 24px;
+  color: #4facfe;
+}
+
+.transaction-list ion-note {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4facfe;
+}
+
+.transaction-list ion-label h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.transaction-list ion-label p {
+  margin: 0;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+
+.animate-up {
+  animation: slide-up 1.5s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* In your global styles.css or component-specific CSS file */
+.icon-card .card-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ion-slides {
+  width: 100%;
+  height: 200px;  // Atur tinggi slide sesuai kebutuhan Anda
+}
+
+ion-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction-list {
+  ion-slides {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+

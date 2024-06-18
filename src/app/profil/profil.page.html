@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-avatar slot="start">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg">
+    </ion-avatar>
+    <ion-title>
+      Profil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Profil Pengguna</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item [button]="true" detail="false" (click)="editProfile()">
+        <ion-icon name="person-circle-outline" slot="start" size="large"></ion-icon>
+        <ion-label>
+          <strong>Edit Profil</strong>
+          <p>Pengaturan Profil</p>
+          <ion-note color="medium">Ubah Data Diri Anda</ion-note>
+        </ion-label>
+        <ion-icon color="medium" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Keamanan Akun</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item [button]="true" detail="false" routerLink="/keamanan-akun">
+        <ion-icon name="lock-closed-outline" slot="start" size="large"></ion-icon>
+        <ion-label>
+          <strong>Akun</strong>
+          <p>Ubah Kata Sandi</p>
+          <ion-note color="medium">Ubah password akun anda</ion-note>
+        </ion-label>
+        <ion-icon color="medium" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Transaksi dan Langganan</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item [button]="true" detail="false" routerLink="/transaksi">
+        <ion-icon name="receipt-outline" slot="start" size="large"></ion-icon>
+        <ion-label>
+          <strong>Transaksi</strong>
+          <p>Informasi Transaksi</p>
+          <ion-note color="medium">histori transaksi</ion-note>
+        </ion-label>
+        <ion-icon color="medium" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item [button]="true" detail="false" routerLink="/langganan">
+        <ion-icon name="ribbon-outline" slot="start" size="large"></ion-icon>
+        <ion-label>
+          <strong>Langganan</strong>
+          <p>Informasi Langganan</p>
+          <ion-note color="medium">kelola berlangganan anda</ion-note>
+        </ion-label>
+        <ion-icon color="medium" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item [button]="true" detail="false" routerLink="/pengaturan">
+        <ion-icon name="settings-outline" slot="start" size="large"></ion-icon>
+        <ion-label >
+          <strong>Pengaturan</strong>
+        </ion-label>
+        <ion-icon color="medium" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-tab-bar slot="bottom">
+    <!-- Tab Beranda -->
+    <ion-tab-button tab="beranda" routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Beranda</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Perpustakaan -->
+    <ion-tab-button tab="perpustakaan" routerLink="/perpustakaan">
+      <ion-icon name="book-outline"></ion-icon>
+      <ion-label>Perpustakaan</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Kategori -->
+    <ion-tab-button tab="kategori" routerLink="/kategori">
+      <ion-icon name="apps-outline"></ion-icon>
+      <ion-label>Kategori</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Profil -->
+    <ion-tab-button tab="profil" routerLink="/profil">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

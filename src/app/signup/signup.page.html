@@ -1,0 +1,41 @@
+
+<ion-content fullscreen>
+  <div class="signup-container">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/login"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    
+
+    <div class="images-container">
+      <img src="/assets/icon/OIP.jpeg" alt=""/>
+    </div>
+    
+    <h1>Selamat Bergabung <br> Daftar Untuk Membuat Akun</h1>
+
+    <ion-item>
+      <ion-input type="email" placeholder="Enter your email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Enter your password"></ion-input>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="eye-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-button expand="block" class="login-button" routerLink="/home">Daftar</ion-button>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <section class="full-width">
+    <div style="background-color:#ffff;text-align: center;margin: 20px 0;color: #a8a8a8;">
+      <label style="color: black;">Belum memiliki akun? daftar </label><label routerLink="/signup" routerDirection="forward" style="color: blue;"><b>klik disini</b></label>
+      <br><br>
+    </div>
+  </section>
+</ion-footer>

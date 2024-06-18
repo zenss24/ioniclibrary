@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perpustakaan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-segment [(ngModel)]="selectedSegment">
+    <ion-segment-button color="dark" value="custom">
+      <ion-label>Koleksi saya</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Langganan</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-card-content *ngIf="selectedSegment === 'custom'">
+    <ion-card color="light">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col
+            ><ion-img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0krDDLxyIkPvpC8xB0cF86CGY42xXlhCPA&s"
+              alt="The Wisconsin State Capitol building in Madison, WI at night"
+            ></ion-img>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-uppercase">
+              <h3>Larva Komik Dengkuran</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card color="light">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col
+            ><ion-img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wMCZ-Fu9hS21myH6cqwSpoAolflbsfcGzw&s"
+              alt="The Wisconsin State Capitol building in Madison, WI at night"
+            ></ion-img>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-uppercase">
+              <h3>Kecil-Kecil Juragan Kelinci</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card color="light">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col
+            ><ion-img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1578889858i/50417272.jpg"
+              alt="The Wisconsin State Capitol building in Madison, WI at night"
+            ></ion-img>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-uppercase">
+              <h3>Komik Hantu Nusantara</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card color="light">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col
+            ><ion-img
+              src="https://ebooks.gramedia.com/ebook-covers/69282/image_highres/BLK_KHNSL2021224860.jpg"
+              alt="The Wisconsin State Capitol building in Madison, WI at night"
+            ></ion-img>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-uppercase">
+              <h3>Cerita Setan Lokal</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-card-content>
+
+  <ion-card-content *ngIf="selectedSegment === 'segment'">
+    <ion-card color="light">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col>
+            <ion-img
+              src="https://ebooks.gramedia.com/ebook-covers/69282/image_highres/BLK_KHNSL2021224860.jpg"
+              alt="Book Cover"
+            ></ion-img>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-uppercase">
+              <h3>Cerita Setan Lokal</h3>
+            </div>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-button fill="clear" (click)="downloadImage('https://ebooks.gramedia.com/ebook-covers/69282/image_highres/BLK_KHNSL2021224860.jpg')">
+              <ion-icon name="download-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-card-content>
+</ion-content>
+
+<ion-footer>
+  <ion-tab-bar slot="bottom">
+    <!-- Tab Beranda -->
+    <ion-tab-button tab="beranda" routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Beranda</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Perpustakaan -->
+    <ion-tab-button tab="perpustakaan" routerLink="/perpustakaan">
+      <ion-icon name="book-outline"></ion-icon>
+      <ion-label>Perpustakaan</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Kategori -->
+    <ion-tab-button tab="kategori" routerLink="/kategori">
+      <ion-icon name="apps-outline"></ion-icon>
+      <ion-label>Kategori</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Profil -->
+    <ion-tab-button tab="profil" routerLink="/profil">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>
+
+
+

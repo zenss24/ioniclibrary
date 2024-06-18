@@ -1,0 +1,69 @@
+ion-toolbar {
+  --background: #333; /* Gradien warna ungu */
+  --color: #fff; /* Warna teks putih */
+  --ion-toolbar-height: 45px; /* Tinggi toolbar */
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px #F4A460(14, 12, 4, 0.1); /* Efek bayangan */
+}
+
+ion-title {
+  font-weight: bold; /* Menjadikan teks judul tebal */
+  font-size: 30px; /* Ukuran teks judul */
+}
+
+ion-button {
+  margin-right: 20px;
+}
+
+ion-avatar {
+  margin-left: 20px; /* Jarak antara foto profil dan judul */
+  width: 65px; /* Lebar foto profil */
+  height: 65px; /* Tinggi foto profil */
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+ion-avatar img {
+  border-radius: 50%; /* Membuat foto profil berbentuk bulat */
+  border: 2px solid #fff; /* Garis putih di sekitar foto profil */
+}
+
+ion-card {
+  --background: #ffffff; /* Warna latar belakang card */
+  --ion-color-primary: #000; /* Warna teks utama */
+  border-radius: 10px; /* Sudut card */
+  box-shadow: 0 2px 4px rgba(14, 12, 4, 0.1); /* Efek bayangan */
+  margin-bottom: 20px;
+}
+
+ion-card-header {
+  --color: #000; /* Warna teks header */
+  --ion-color-primary: #000; /* Warna teks utama */
+  background-color: #333;
+  border-radius: 10px 10px 0 0;
+}
+
+ion-card-title {
+  color: #fff;
+}
+
+
+
+.triangle-right {
+  width: 50px;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 250px solid #F4A460;
+  border-bottom: 100px solid #6c61b1;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+ion-content {
+  --background: none; /* menghilangkan background default */
+  background-image: url(https://i.pinimg.com/564x/90/bf/3d/90bf3d44055625d4bf051796d98ad485.jpg); /* ganti dengan path ke gambar background Anda */
+  background-size: cover; /* membuat gambar menutupi seluruh elemen */
+  background-position: center; /* membuat gambar berada di tengah */
+  background-repeat: no-repeat; /* memastikan gambar tidak diulang */
+}

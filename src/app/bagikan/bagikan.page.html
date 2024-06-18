@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bagikan</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item button detail="false" class="share-item" (click)="share('whatsapp')">
+      <ion-icon slot="start" name="logo-whatsapp" class="share-icon"></ion-icon>
+      Bagikan ke WhatsApp
+    </ion-item>
+    <ion-item button detail="false" class="share-item" (click)="share('instagram')">
+      <ion-icon slot="start" name="logo-instagram" class="share-icon"></ion-icon>
+      Bagikan ke Instagram
+    </ion-item>
+    <ion-item button detail="false" class="share-item" (click)="share('tiktok')">
+      <ion-icon slot="start" name="logo-tiktok" class="share-icon"></ion-icon>
+      Bagikan ke TikTok
+    </ion-item>
+    <ion-item button detail="false" class="share-item" (click)="share('telegram')">
+      <ion-icon slot="start" name="paper-plane" class="share-icon"></ion-icon>
+      Bagikan ke Telegram
+    </ion-item>
+    <ion-item button detail="false" class="share-item" (click)="share('email')">
+      <ion-icon slot="start" name="mail" class="share-icon"></ion-icon>
+      Bagikan via Email
+    </ion-item>
+    <ion-item button detail="false" class="share-item" (click)="share('facebook')">
+      <ion-icon slot="start" name="logo-facebook" class="share-icon"></ion-icon>
+      Bagikan ke Facebook
+    </ion-item>
+    <ion-item button detail="false" class="share-item" (click)="share('sms')">
+      <ion-icon slot="start" name="chatbox" class="share-icon"></ion-icon>
+      Bagikan via SMS
+    </ion-item>
+  </ion-list>
+
+</ion-content>

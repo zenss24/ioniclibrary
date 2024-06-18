@@ -1,0 +1,126 @@
+<ion-content fullscreen>
+  <div class="header">
+    <div class="greeting">
+      <p></p>
+      <h1>RAKBUKU</h1>
+    </div>
+    <div class="header-icons">
+      <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
+      <img src="/assets/icon/favicon.png" alt="Profile Picture" class="profile-picture"/>
+    </div>
+  </div>
+  <div class="content animate-up">
+    <!-- Grid for Icon Cards -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-card class="icon-card">
+            <div class="card-logo"> 
+              <img src="/assets/imgs/history.png" alt=""/>
+            </div>  
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card class="icon-card">
+            <div class="card-logo"> 
+              <img src="/assets/imgs/buku.png" alt=""/>
+            </div>  
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card class="icon-card">
+            <div class="card-logo"> 
+              <img src="/assets/imgs/save.jpg" alt=""/>
+            </div>  
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Transactions List -->
+    <ion-list class="transaction-list animate-up">
+      <ion-list-header>
+        <h5>Terpopuler</h5>
+      </ion-list-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-card class="card1">
+              <img alt="Laskar Pelangi" src="/assets/imgs/laskarpelangi.jpeg" />
+              <ion-card-header>
+                <ion-card-title>Laskar Pelangi</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="card1">
+              <img alt="Laskar Pelangi" src="/assets/imgs/laskarpelangi.jpeg" />
+              <ion-card-header>
+                <ion-card-title>Laskar Pelangi</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="card1">
+              <img alt="Laskar Pelangi" src="/assets/imgs/laskarpelangi.jpeg" />
+              <ion-card-header>
+                <ion-card-title>Laskar Pelangi</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-item class="animate-up">
+        <ion-icon name="chatbubbles-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Chat Group</h2>
+          <p>Saling Sapa Sekitar Wilayah Mu</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item class="animate-up">
+        <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Jual Jasa Keahlian</h2>
+          <p>Tawarkan Jasa Keahlian Mu</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item class="animate-up">
+        <ion-icon name="cart-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Beli Jasa Keahlian</h2>
+          <p>Gunakan Jasa Keahlian Orang Di Sekitar Mu</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-tab-bar slot="bottom">
+    <!-- Tab Beranda -->
+    <ion-tab-button tab="beranda" routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Beranda</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Perpustakaan -->
+    <ion-tab-button tab="perpustakaan" routerLink="/perpustakaan">
+      <ion-icon name="book-outline"></ion-icon>
+      <ion-label>Perpustakaan</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Kategori -->
+    <ion-tab-button tab="kategori" routerLink="/kategori">
+      <ion-icon name="apps-outline"></ion-icon>
+      <ion-label>Kategori</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Profil -->
+    <ion-tab-button tab="profil" routerLink="/profil">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

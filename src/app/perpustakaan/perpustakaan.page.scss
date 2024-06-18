@@ -1,0 +1,132 @@
+/* perpustakaan.page.scss */
+:host {
+  ion-content {
+    --background: #F4A460;
+  }
+  ion-content {
+    --background: none; /* menghilangkan background default */
+    background-image: url(https://i.pinimg.com/564x/90/bf/3d/90bf3d44055625d4bf051796d98ad485.jpg); /* ganti dengan path ke gambar background Anda */
+    background-size: cover; /* membuat gambar menutupi seluruh elemen */
+    background-position: center; /* membuat gambar berada di tengah */
+    background-repeat: no-repeat; /* memastikan gambar tidak diulang */
+  }
+  /* perpustakaan.page.scss atau global.css */
+  ion-item {
+      margin-bottom: 50px; /* Tambahkan spasi antar item, sesuaikan nilainya sesuai kebutuhan */
+  }
+
+  ion-item:last-child {
+      margin-bottom: 0; /* Hapus margin dari item terakhir */
+  }
+  /* perpustakaan.page.scss atau global.css */
+
+  /* Mengatur setiap ion-item sebagai flex container */
+  ion-item {
+    display: flex;
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    padding: 10px 0; /* Menambahkan padding untuk top dan bottom */
+  }
+
+  /* Mengatur jarak antara ion-thumbnail dan ion-label */
+  ion-thumbnail {
+    margin-right: px; /* Memberi ruang antara thumbnail dan label */
+    width: 60px; /* Ukuran tetap untuk thumbnail */
+    height: 60px; /* Ukuran tetap untuk thumbnail */
+  }
+
+  ion-label {
+    flex: 10; /* Membiarkan label mengambil ruang yang tersisa */
+    margin-left: 10px; /* Tambahan margin untuk pemisahan yang lebih jelas */
+  }
+
+  /* Opsional: Menambahkan garis bawah antar item */
+  ion-item:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Garis pemisah */
+  }
+  /* Mengatur tata letak dan gaya tombol download */
+  ion-col.size-auto {
+    /* Atur tata letak tombol menjadi tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Mengatur gaya ikon di dalam tombol */
+  ion-button ion-icon {
+    /* Atur ukuran ikon */
+    font-size: 30px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    /* Atur warna ikon */
+    color: #000000; /* Ganti dengan warna yang diinginkan */
+  }
+  /* Mengatur gaya untuk teks dalam .ion-text-uppercase */
+  .ion-text-uppercase {
+    text-transform: uppercase; /* Menjadikan teks huruf besar */
+    font-family: 'Montserrat', sans-serif; /* Menggunakan font Roboto atau font alternatif */
+    font-weight: bolder; /* Membuat teks menjadi tebal */
+    font-size: 24px; /* Mengatur ukuran font */
+    color: #000000; /* Warna Hitam */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan pada teks */
+    letter-spacing: 1px; /* Memberi jarak antar huruf */
+    text-align: left; /* Memusatkan teks */
+    margin: 20px 0; /* Memberi jarak vertikal di atas dan bawah teks */
+  }
+  /* Gaya SCSS untuk komponen Ion Segment */
+ion-segment {
+  display: flex; /* Menggunakan layout flexbox untuk tata letak horizontal */
+  justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+  align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+  gap: 5px; /* Menambahkan ruang antara tombol */
+  margin: 5px 0; /* Menambahkan margin vertikal untuk ruang */
+  background-color: #222; /* Latar belakang gelap untuk segmen */
+  border-radius: 20px; /* Sudut membulat untuk tampilan modern */
+  padding: 5px; /* Menambahkan padding ke segmen */
+
+  /* Opsi: Menambahkan bayangan untuk efek 3D */
+  box-shadow: 0 4px 8px rgb(254, 254, 254); /* Bayangan yang lebih gelap untuk kedalaman */
+}
+
+ion-segment-button {
+  flex: 0 1 auto; /* Memastikan tombol tidak meregang dan hanya mengambil ruang yang diperlukan */
+  display: flex; /* Menggunakan flexbox di dalam tombol */
+  align-items: center; /* Menyelaraskan konten secara vertikal di tengah */
+  justify-content: center; /* Menyelaraskan konten secara horizontal di tengah */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  color: #000000; /* Teks putih untuk kontras yang baik */
+  font-size: 16px; /* Ukuran font standar */
+  padding: 5px 10px; /* Menambahkan padding untuk konten tombol */
+  background-color: #878787; /* Latar belakang yang lebih gelap untuk tombol */
+  border-radius: 8px; /* Sudut membulat untuk estetika modern */
+  border: none; /* Menghilangkan border default */
+  cursor: pointer; /* Mengubah kursor menjadi pointer untuk UX yang lebih baik */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s; /* Transisi halus untuk perubahan latar belakang dan warna */
+
+  
+  }
+
+.ion-footer {
+  position: fixed;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+
+
+
+  
+  
+
+  
+}
+
+

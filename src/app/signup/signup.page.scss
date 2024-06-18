@@ -1,0 +1,81 @@
+
+.signup-container {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .images-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 35px;
+    }
+    
+  .images-container img {
+  max-width: 40%;  /* Reduce the max-width for smaller images */
+  height: auto;
+  margin: 0 5px;  /* Adjust the margin for better spacing */
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  ion-item {
+    margin: 16px 0;
+    --background: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  ion-input {
+    padding: 8px 16px;
+  }
+  
+  .login-button {
+    background: linear-gradient(45deg, #c78800, #eeb029);
+    color: #ffffff;
+    --background: linear-gradient(45deg, #c78800, #eeb029);
+    --color: #ffffff;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  // .login-button {
+  //   background: #939693;
+  //   color: #ffffff;
+  //   --background: #c78800;
+  //   --color: #ffffff;
+  //   margin-top: 20px;
+  // }
+  
+  .divider {
+    margin: 20px 0;
+    color: #a8a8a8;
+  }
+  
+  .social-login ion-button {
+    margin: 0 8px;
+    color: #2c8515;
+    font-size: 24px;
+  }

@@ -1,0 +1,216 @@
+<ion-header collapse="condense">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>kategori</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header class="custom-header">
+    <ion-toolbar class="custom-toolbar">
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Buku</ion-card-title>
+      <ion-button fill="clear" id="card-popover-button-1" (click)="$event.stopPropagation()">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+      <ion-thumbnail routerLink="/buku">
+        <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWmOFwEN0Zi32HvTbsTzgUpQ6mOca0vt9ZUA&s" />
+      </ion-thumbnail>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-popover trigger="card-popover-button-1" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item button detail="false" (click)="showReportAlert()">Laporkan</ion-item>
+          <ion-item button detail="false" (click)="openBagikanModal()">Bagikan</ion-item>
+
+          <ion-popover trigger="nested-trigger-1" [dismissOnSelect]="true" side="end">
+            <ng-template>
+              <ion-content>
+                <ion-list>
+                  <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                </ion-list>
+              </ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Majalah</ion-card-title>
+      <ion-button fill="clear" id="popover-button-2">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+      <ion-thumbnail routerLink="/majalah">
+        <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1hXHZNxHzILNwjk07nq48DQE0f4UoVj3fA&s" />
+      </ion-thumbnail>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-popover trigger="popover-button-2" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item button detail="false" (click)="showReportAlert()">Laporkan</ion-item>
+          <ion-item button detail="false" (click)="openBagikanModal()">Bagikan</ion-item>
+
+          <ion-popover trigger="nested-trigger-2" [dismissOnSelect]="true" side="end">
+            <ng-template>
+              <ion-content>
+                <ion-list>
+                  <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                </ion-list>
+              </ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Novel</ion-card-title>
+      <ion-button id="popover-icon-button-3" fill="clear">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+      <ion-thumbnail routerLink="/novel">
+        <img alt="Silhouette of mountains" src="https://th.bing.com/th?id=OIP.prZXTgMR76QXLKGSt2IJOwHaL0&w=197&h=315&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+      </ion-thumbnail>
+    </ion-card-header>
+
+    <ion-popover trigger="popover-icon-button-3" [dismissOnSelect]="true">
+      <ng-template>
+        <ion-content>
+          <ion-list>
+            <ion-item button detail="false" (click)="showReportAlert()">Laporkan</ion-item>
+            <ion-item button detail="false" (click)="openBagikanModal()">Bagikan</ion-item>
+
+            <ion-popover trigger="nested-trigger-3" [dismissOnSelect]="true" side="end">
+              <ng-template>
+                <ion-content>
+                  <ion-list>
+                    <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                  </ion-list>
+                </ion-content>
+              </ng-template>
+            </ion-popover>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Koran</ion-card-title>
+      <ion-button fill="clear" id="popover-button-4">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+      <ion-thumbnail routerLink="/koran">
+        <img alt="Silhouette of mountains" src="https://th.bing.com/th?id=OIP.RIRu48PW4ADSFnmFrL7WAAAAAA&w=199&h=313&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />
+      </ion-thumbnail>
+
+      <ion-popover trigger="popover-button-4" [dismissOnSelect]="true">
+        <ng-template>
+          <ion-content>
+            <ion-list>
+              <ion-item button detail="false" (click)="showReportAlert()">Laporkan</ion-item>
+              <ion-item button detail="false" (click)="openBagikanModal()">Bagikan</ion-item>
+
+              <ion-popover trigger="nested-trigger-4" [dismissOnSelect]="true" side="end">
+                <ng-template>
+                  <ion-content>
+                    <ion-list>
+                      <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                    </ion-list>
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Jurnal</ion-card-title>
+      <ion-button id="popover-button-5" fill="clear">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+      <ion-thumbnail routerLink="/jurnal">
+        <img alt="Silhouette of mountains" src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/2/6/96423948-9317-4606-9831-982eb54a45a8.jpg" />
+      </ion-thumbnail>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-popover trigger="popover-button-5" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item button detail="false" (click)="showReportAlert()">Laporkan</ion-item>
+          <ion-item button detail="false" (click)="openBagikanModal()">Bagikan</ion-item>
+
+          <ion-popover trigger="nested-trigger-5" [dismissOnSelect]="true" side="end">
+            <ng-template>
+              <ion-content>
+                <ion-list>
+                  <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                </ion-list>
+              </ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
+</ion-content>
+
+<ion-footer>
+  <ion-tab-bar slot="bottom">
+    <!-- Tab Beranda -->
+    <ion-tab-button tab="beranda" routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Beranda</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Perpustakaan -->
+    <ion-tab-button tab="perpustakaan" routerLink="/perpustakaan">
+      <ion-icon name="book-outline"></ion-icon>
+      <ion-label>Perpustakaan</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Kategori -->
+    <ion-tab-button tab="kategori" routerLink="/kategori">
+      <ion-icon name="apps-outline"></ion-icon>
+      <ion-label>Kategori</ion-label>
+    </ion-tab-button>
+
+    <!-- Tab Profil -->
+    <ion-tab-button tab="profil" routerLink="/profil">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>
